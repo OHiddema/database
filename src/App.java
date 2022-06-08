@@ -7,11 +7,12 @@ public class App {
         String password = "root";
         String sql = "SELECT * FROM city where CountryCode='NLD'";
         try {  
-            Connection con=DriverManager.getConnection(url, user, password);  
+            Connection con = DriverManager.getConnection(url, user, password);  
             Statement stmt = con.createStatement();  
             ResultSet rs = stmt.executeQuery(sql);  
-            while(rs.next())  
-            System.out.println(rs.getString(2));
+            while(rs.next()) {
+                System.out.println(rs.getString(2));
+            }
             con.close();  
         }
         catch(Exception e) {
