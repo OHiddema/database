@@ -10,7 +10,7 @@ public class App {
             Statement stmt = con.createStatement();  
             ResultSet rs = stmt.executeQuery(sql);  
             while(rs.next()) {
-                System.out.println(rs.getString(2));
+                System.out.println(rs.getString("Name"));
             }
         } catch(Exception e) {
             System.out.println(e);
