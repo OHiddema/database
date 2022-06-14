@@ -2,6 +2,7 @@ import java.sql.*;
 
 public class App {
     public static void main(String[] args) {
+        // test!
         String url = "jdbc:mysql://localhost:3306/world";
         String user = "root";
         String password = "root";
